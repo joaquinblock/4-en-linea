@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta 4</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <canvas id="gameCanvas" width="1920" height="1080"></canvas>
-
+    <div class="cronometro-container">
+        <div id="cronometro" class="cronometro-display">00:00</div>
+    </div>
+    <select id="tamanioTablero">
+        <option value="4">4 en línea</option>
+        <option value="5">5 en línea</option>
+        <option value="6">6 en línea</option>
+        <option value="7">7 en línea</option>
+    </select>
     <script type="module" src="game.js"></script>
-    <script type="module" src="./clases/Ficha.js"></script>
     <script type="module" src="Fichero.js"></script>
+    <script  type="module" src="cronometro.js"></script>
 
 </body>
 </html>

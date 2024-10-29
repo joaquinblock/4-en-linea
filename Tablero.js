@@ -10,6 +10,7 @@ export class Tablero {
         this.ctx = ctx;
         this.limiteBase = posIniX - radioFicha - margenLineas;
         this.matriz = [];
+        this.colorLinea = "rgba(255, 215, 0)";
         this.inicializarMatriz();
     }
 
@@ -24,7 +25,7 @@ export class Tablero {
                 this.dibujarCirculo(x, y, opacidad);
             }
             if (col == columnaActual || col== columnaActual+1){
-                color = "rgba(255, 69, 0)";
+                color = this.colorLinea;
             }else{
                 color = "white";
             }
@@ -32,7 +33,7 @@ export class Tablero {
         }
 
         if(columnaActual==6){
-            color = "rgba(255, 69, 0)";
+            color = this.colorLinea;
         }else{
             color = "white";
         }
