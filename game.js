@@ -44,11 +44,11 @@ window.onload = () => {
             dibujarIconReset();
             dibujarSelectorJuego();
     
-            const radioFicha = 50;
-            const margenFichas = (radioFicha*2) + 50; //el diametro + un numero x
+            const radioFicha = 40;
+            const margenFichas = (radioFicha*2) + 30; //el diametro + un numero x
             const posIniX = width*0.33;
             const posIniY = height*0.16;
-            const margenLineas = 25;
+            const margenLineas = 15;
             const opacidad = 1; //valores entre 0 y 1
             
             let tablero1 = new Tablero(filas, columnas, posIniX, posIniY, margenFichas, margenLineas, radioFicha, ctx);
