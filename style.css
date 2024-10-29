@@ -1,0 +1,12 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+canvas {
+    display: block; /* para que tenga margin y padding 0 */
+    width: 100vw; /* Asegura que ocupe el ancho de la pantalla */
+    height: 100vh; /* Asegura que ocupe la altura de la pantalla */
+}
