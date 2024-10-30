@@ -36,7 +36,7 @@ window.onload = () => {
     function inicializarJuego(filas, columnas){
         
         const background = new Image();
-        background.src = '../img/background-cs.jpeg';
+        background.src = './img/background-cs.jpeg';
         let modoJuego = "4 en linea";
 
         background.onload = () => {
